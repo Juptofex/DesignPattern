@@ -1,0 +1,9 @@
+Voici un exemple de fichier pour tester notre analyseur.
+Il contient plusieurs mots et palindromes comme radar, level, et kayak.
+La Belgique est un beau pays.
+Mon email est test@example.com et celui de mon ami est contact@belgique.be.
+Anna aime les palindromes.
+12321 est un palindrome numérique.
+Cette ligne contient aussi la Belgique.
+radar level kayak
+Fin du fichier de test.
