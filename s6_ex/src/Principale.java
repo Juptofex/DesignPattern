@@ -13,5 +13,5 @@ public class Principale implements ConstantesJeu {
 //1. Singleton -> estVivante & estMorte
 //2. Observer -> JeuDeLaVieGUI & Espion & JeuDeLaVie
 //3. State -> situation + estVivante & estMorte + cellule
-//4. Visitor -> parcourir ??
+//4. Visitor -> parcourir + jeuDeLaVie + cellule
 //5. Command Pattern -> Activite + Vit & Meurt
