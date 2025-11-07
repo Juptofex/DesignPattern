@@ -27,10 +27,20 @@ public class PatternRobots {
 	}
 	
 	public static void main(String[] args) {
-		Robot robot1=// un robot avec un canon de 10, un bouclier de 2, une fréquence de tir de 100 et qui a reçu une amélioration de canon multipliant la puissance de ce dernier par 2.
-		Robot robot2=// un robot avec un canon de 9, un bouclier de 3, une fréquence de tir de 90 
-					// et qui a reçu une amélioration de bouclier multipliant ce dernier par 2 et une amélioration de mitigation des dégats qui réduit les points de vue perdus par 2. 
-		
+		Robot robot1 = new RobotBuilder()
+				.setName("Robot1")
+				.setCanon(10)
+				.setShield(2)
+				.setFreq(100)
+				.build();
+
+		Robot robot2 = new RobotBuilder()
+				.setName("Robot2")
+				.setCanon(9)
+				.setShield(3)
+				.setFreq(90)
+				.build();
+
 		fight(robot1, robot2);
 	}
 }
