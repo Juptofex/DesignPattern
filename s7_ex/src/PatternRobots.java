@@ -28,26 +28,23 @@ public class PatternRobots {
 
 	public static void main(String[] args) {
 		Robot robot1 = new DoubleCanonDecorator(
-				new RobotBuilder()
-						.setName("Robot1")
-						.setCanon(10)
-						.setShield(2)
-						.setFreq(100)
-						.build()
+				RobotFactory.createPicVert()
 		);
 
 		Robot robot2 = new HalfDamageDecorator(
-				new DoubleShieldDecorator(
-						new RobotBuilder()
-								.setName("Robot2")
-								.setCanon(9)
-								.setShield(3)
-								.setFreq(90)
-								.build()
-				)
+				RobotFactory.createTank()
 		);
 
 		fight(robot1, robot2);
+
+		// Exemple avec Grosse Berta
+		Robot robot3 = RobotFactory.createGrosseBerta();
+		Robot robot4 = new DoubleShieldDecorator(
+				RobotFactory.createPicVert()
+		);
+
+		fight(robot3, robot4);
 	}
+
 
 }
